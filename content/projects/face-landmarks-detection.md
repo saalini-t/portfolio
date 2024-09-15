@@ -1,19 +1,22 @@
 ---
-title: "Face Landmarks Detection using CNN"
-description: "Can computers really understand the human face?"
-dateString: May 2020
+title: "Memory Game"
+description: "Want to test your memory in a fun way?"
+dateString: May 2024
 draft: false
-tags: ["DL", "AI", "Python", "PyTorch"]
+tags: ["HTML", "JavaScript", "CSS"]
 showToc: false
 weight: 205
 cover:
-    image: "projects/face-landmarks-detection/cover.jpg"
---- 
+    image: "/projects/face-landmarks-detection/Screenshot (102).png"
+---
+
 ### 🔗 [Colab Notebook](https://colab.research.google.com/drive/1TOw7W_WU4oltoGZfZ_0krpxmhdFR2gmb)
 ### 🔗 [Blog Post](../../blog/face-landmarks-detection)
 
 ## Description
 
-In this project, I trained a neural network to localize key points on faces. **Resnet-18** was used as the model with some slight modifications to the input and output layer. The model was trained on the official **DLib Dataset** containing **6666 images** along with corresponding **68-point landmarks** for each face. Additionally, I wrote a custom data preprocessing pipeline in **PyTorch** to increase variance in the input images to help the model generalize better. The neural network was trained for 30 epochs before it reached the optima.
+I developed a memory game using HTML, CSS, and JavaScript that challenges players to match pairs of cards. The game begins by displaying a grid of face-down cards, each containing an image or symbol. When a player clicks on a card, it flips over to reveal its content. The objective is to find matching pairs by remembering the locations of previously revealed cards.
 
-During inference, **OpenCV Harr Cascades** are used to detect faces in the input images. Detected faces are then cropped, resized to (224, 224), and fed to our trained neural network to predict landmarks in them. The predicted landmarks in the cropped faces are then overlayed on top of the original image.
+![Game Screenshot](/projects/face-landmarks-detection/Screenshot%20(104).png)
+
+The game includes features such as a timer and a move counter to track the player's performance. The design is visually engaging with responsive animations, making it suitable for different screen sizes. Additionally, I implemented logic to ensure that the game resets once all pairs are matched, offering a new random arrangement of cards for replayability.

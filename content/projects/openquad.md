@@ -1,20 +1,25 @@
 ---
-title: "OpenQuad"
-description: "Open-souce platform for drone automation"
-dateString: July 2019 - Dec 2019
+title: "Calculator"
+description: "A Calculator"
+dateString: July 2023
 draft: false
-tags: ["Drone", "Raspberry Pi", "Python", "Computer Vision", "Automation"]
+tags: ["Python", "PyQt6"]
 showToc: false
 weight: 207
 cover:
-    image: "projects/openquad/cover.jpg"
---- 
-### 🔗 [GitHub](https://github.com/OpenQuad-RMI/openquad)
+    image: "/projects/openquad/Screenshot (124).png"
+---
 
 ## Description
 
-The aim of the project is to build an open-source quadcopter platform for research in the field of drone autonomy. Various deep learning and computer vision algorithms will be implemented on the drone including person tracking, gesture control using human pose estimation, optical flow stabilization, obstacle avoidance, and depth estimation using monocular vision. The drone uses a **Pixhawk** flight controller with **Raspberry Pi** as a companion computer. **DJI Flame Wheel-450** is used for the quadcopter frame along with some custom mountings for adding additional components.
+I developed a calculator using PyQt6, a Python library for creating graphical user interfaces (GUIs). This project involved designing a functional calculator with a clear layout and interactive buttons for performing arithmetic operations.
 
-**Raspberry Pi** runs a **ROS** node which communicates with another **ROS** node running on the host PC to transfer videos over Wi-Fi. To make the project open-source, easy to develop, and easily reproducible, the simulation environment setup has been dockerized using docker container. We are currently developing the algorithms and testing them in **Gazebo Simulation**.
+### Applications Used:
+- **PyQt6**: For building the user interface of the calculator, allowing the design of buttons, display areas, and managing the layout.
+- **Python**: The core programming language used to implement the logic behind the calculator’s functions, such as addition, subtraction, multiplication, and division.
 
-![](/projects/openquad/img1.jpg)
+### Modules Imported:
+- **`sys`**: Used to handle command-line arguments and properly exit the application.
+- **`PyQt6.QtWidgets`**: Provides the primary GUI elements, including `QMainWindow`, `QPushButton`, `QVBoxLayout`, and others, which were essential for constructing the interface.
+- **`PyQt6.QtCore`**: Manages the application’s core functionality, like signals and slots for handling button clicks and other interactions.
+- **`PyQt6.QtGui`**: Used for managing graphical elements such as icons and fonts to enhance the calculator’s appearance.

@@ -1,6 +1,6 @@
-baseURL: "https://arkalim.netlify.app"
+baseURL: "https://saalini.netlify.app"
 languageCode: en-us
-title: Abdur Rahman
+title: saalini
 theme: PaperMod
 
 menu:
@@ -46,15 +46,15 @@ params:
   env: production
 
   # Home Page
-  profileMode:
+  profileMode:             
     enabled: true
-    title: "Abdur Rahman"
-    subtitle: Hi 👋 I'm Abdur, a tech enthusiast who loves solving complex problems. As a Software Developer in the Backend Infrastructure team at [**Clio**](https://www.clio.com), I'm building robust systems to transform the legal experience for all. By evening, you can find me pushing the limits of my strength at the gym or whipping up my favorite recipe in the kitchen. Let's connect and create something awesome together!
+    title: "Saalini Thirunavukkarasu"
+    subtitle:  Hi 👋 I'm Saalini, a tech enthusiast with a passion for solving complex problems. I’m a Python programmer with proficiency in C and C++, and I’m currently diving into JavaScript. I thrive on learning and coding, constantly working on new and exciting projects. When I’m not coding, you might find me playing table tennis or enjoying a swim. While I’m dedicated and productive, I also value having fun with those around me. I’m an extroverted and easy-going person, always looking forward to new experiences and opportunities in life.
 
  
-    imageUrl: "home/casual-small-square.jpeg"
+    imageUrl: ""
     imageWidth: 220
-    imageHeight: 220
+    imageHeight: "/home/WhatsApp%20Image%202024-08-31%20at%2012.44.51%20PM.jpeg"
     # buttons:
     #   - name: Resume
     #     url: ""
@@ -69,14 +69,12 @@ params:
 
   socialIcons:
     - name: "email"
-      url: "mailto:abdur.rahman.kalim@gmail.com"
+      url: "saalini.t@gmail.com"
     - name: "linkedin"
-      url: "https://www.linkedin.com/in/abdurrahmankalim"
+      url: "https://www.linkedin.com/in/saalini-t"
     - name: "github"
-      url: "https://github.com/arkalim"
-    - name: "youtube"
-      url: "https://www.youtube.com/c/AbdurRahmanKalim"
-
+      url: "https://github.com/saalini-t"
+    
   # text search
   fuseOpts:
     isCaseSensitive: false

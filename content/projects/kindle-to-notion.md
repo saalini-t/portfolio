@@ -1,21 +1,45 @@
 ---
-title: "Kindle to Notion"
-description: "A way to seamlessly transfer your Kindle highlights to Notion Database!"
-dateString: Dec 2021
+title: "Travel itinerary Website"
+description: "To make traveling easy and efficent."
+dateString: august 2024
 draft: false
-tags: ["TypeScript", "NodeJS", "Docker", "GitHub Actions"]
+tags: ["Html", "NodeJS", "Javascript", "CSS"]
 showToc: false
 weight: 202
 cover:
-    image: "projects/kindle-to-notion/cover.jpg"
+    image: "/projects/kindle-to-notion/Screenshot (105).png"
 --- 
-### 🔗 [GitHub](https://github.com/arkalim/kindle-to-notion)
+### 🔗 [GitHub](https://github.com/saalini-t/Son-Of-Pitches_Saalini_RA2411003010149.git)
 
 ## Description
-I like reading personal improvement and mindset change type books on **Kindle** e-reader. Some of these books are downloaded straight from the internet and not from the Kindle store. I take highlights during my reading which I wanted to sync to my Notion workspace. There was no existing app that could do this job, so I developed my own. 
+Flight Booking System:
+The flight booking feature allows users to search for and book flights based on their desired travel dates and destinations. It likely integrates with flight APIs to retrieve real-time flight data, including available airlines, flight timings, prices, and other essential details. Users can choose their preferred flights, input their travel information (such as passenger details), and complete the booking. The system might also offer filtering options like direct flights, flexible dates, and seat selection for a more customized experience.
+![](/projects/kindle-to-notion/Screenshot%20(113).png)
+![](/projects/kindle-to-notion/Screenshot%20(114).png)
 
-Kindle exports the highlights as a file named `MyClippings.txt`. The **NodeJS** application reads the `MyClipping.txt` file exported by Kindle, parses it using Regex, extracts all the highlights, book names, highlight time etc and creates a JSON. It then uses **Notion API** to sync these highlights to a database in my Notion workspace. The app maintains a cache (JSON) containing the number of highlights synced for each book. This allows the highlights to be synced incrementally, preventing re-syncing of old highlights. 
+Nearby Restaurants:
+This feature helps users discover restaurants near their current or destination location. It likely pulls data from an API (such as Google Places or Yelp) to list restaurants based on proximity, cuisine type, rating, and price range. Users can browse detailed restaurant information, including menus, user reviews, hours of operation, and contact details. This functionality is especially useful for travelers looking for dining options while planning their trips.
+![](/projects/kindle-to-notion/Screenshot%20(107).png)
 
-After the app was received well by the open-source community and other developers contributed to improve the app, I dockerized it to make shipping the app easier. Now, the users don’t have to install any dependency. They can just use the `docker run` command with the path to their clippings file along with their Notion API key and database ID. This would sync their highlights to their Notion database.
+![](/projects/kindle-to-notion/Screenshot%20(110).png)
 
-As a part of automation, I implemented auto build and deployment of containers on push to the master branch using **GitHub Actions**. If a developer raises a pull request and I merge it to the master branch, the GitHub workflow automatically builds the app and deploys it to GitHub packages repository.
+Hotel Reviews:
+Hotel reviews provide insights from previous guests, helping users make informed decisions before booking accommodations. The system aggregates reviews, offering users a clear overview of the hotel's amenities, service quality, cleanliness, location, and other factors. Users can filter reviews by categories like the purpose of travel (business, family, solo), making it easier to find relevant feedback. This feature may also include a rating system (e.g., 1-5 stars) and the ability to sort reviews by recency or score.
+
+Hotel Bookings:
+The hotel booking feature allows users to search for hotels based on their travel dates, location, and preferences. The website likely integrates with hotel booking APIs (such as Booking.com or Expedia) to display available hotels, room types, pricing, and availability. Users can compare hotels, view photos, read detailed descriptions, and then complete the booking process directly through the site. The system might offer filtering options like price range, star rating, and amenities (e.g., free Wi-Fi, breakfast included, pool).
+![](/projects/kindle-to-notion/Screenshot%20(117).png)
+
+5. Itinerary Planning:
+Although not explicitly mentioned, your travel itinerary website likely offers users the ability to plan and organize their trips in one place. After booking flights and hotels, users can create a customized itinerary by adding activities, restaurant visits, and sightseeing plans. The website may provide a day-by-day breakdown, allowing travelers to easily visualize and adjust their schedules.
+![](/projects/kindle-to-notion/Screenshot%20(120).png)
+
+![](/projects/kindle-to-notion/Screenshot%20(121).png)
+
+ User-Friendly Interface:
+The website, built using HTML, CSS, and JavaScript, ensures a visually appealing and responsive interface. The layout likely adapts to various screen sizes, ensuring an optimal experience on both desktop and mobile devices. Features such as flight and hotel searches, reviews, and booking forms are intuitively designed to make navigation smooth and user-friendly.
+
+Backend with Node.js:
+The Node.js backend handles server-side operations, such as processing flight and hotel search queries, managing bookings, and retrieving data from external APIs. It ensures that the website is fast, reliable, and scalable, handling multiple user requests simultaneously. The backend also manages user sessions, storing booking information and preferences for a seamless experience.
+
+Overall, my website offers a comprehensive, all-in-one platform that simplifies trip planning by integrating flights, hotels, restaurants, and reviews in one convenient interface, making it easy for travelers to organize their trips efficiently.

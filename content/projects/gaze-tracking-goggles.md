@@ -1,16 +1,21 @@
 ---
-title: "Gaze-tracking Goggles"
-description: "Smart Goggles for Gaze Analysis"
-dateString: Sep 2019 - Oct 2019
+title: "Tool Bar"
+description: "Need an basic interface for you software?"
+dateString: march 2024
 draft: false
-tags: ["DL", "AI", "Python", "PyTorch", "Computer Vision"]
+tags: ["PyQt6", "AI", "Python"]
 showToc: false
 weight: 206
 cover:
-    image: "projects/gaze-tracking-goggles/cover.jpg"
+    image: "/projects/gaze-tracking-goggles/Screenshot (97).png"
 --- 
 ## Description
 
-The aim of the project was to build goggles which could find where the user was looking (gaze), the category of object the user was looking at, and the duration of attention on that object. The goggles had 3 camera modules, one on each eye to track the pupil movement and the third one for mapping the gaze to the real world. Thresholding was used to detect the pupils and contours were used to find its centre. Various important parameters such as pupil velocity, acceleration, and fixation time were calculated for further statistical analysis. **Single Shot Descriptor**, with **VGG16** as backbone, was used to detect the objects the user was gazing at. Additionally, a GUI was made using **TkInter** for ease of use.
+I developed a toolbar using PyQt6, which functions as a versatile interface equipped with a file document icon. 
 
-![](/projects/gaze-tracking-goggles/img1.jpg)
+![](/projects/gaze-tracking-goggles/Screenshot%20(101).png)
+ 
+The toolbar is movable, allowing users to reposition it anywhere on the screen, offering flexibility in its use. This makes it an adaptable component for various software applications, providing a convenient way to integrate essential functions like file management or other key features. Its modular design ensures that it can be seamlessly incorporated into any software project, enhancing user interaction with intuitive controls.
+
+
+ 
